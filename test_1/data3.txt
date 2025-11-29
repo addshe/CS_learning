@@ -1,0 +1,37 @@
+about to call swap! ix: 0 jx: 2	swaping: 8 with 3
+after swap(): vall1: 3 vall2: 8
+about to call swap! ix: 0 jx: 4	swaping: 3 with 1
+after swap(): vall1: 1 vall2: 3
+about to call swap! ix: 1 jx: 2	swaping: 34 with 8
+after swap(): vall1: 8 vall2: 34
+about to call swap! ix: 1 jx: 4	swaping: 8 with 3
+after swap(): vall1: 3 vall2: 8
+about to call swap! ix: 1 jx: 7	swaping: 3 with 2
+after swap(): vall1: 2 vall2: 3
+about to call swap! ix: 2 jx: 3	swaping: 34 with 13
+after swap(): vall1: 13 vall2: 34
+about to call swap! ix: 2 jx: 4	swaping: 13 with 8
+after swap(): vall1: 8 vall2: 13
+about to call swap! ix: 2 jx: 6	swaping: 8 with 5
+after swap(): vall1: 5 vall2: 8
+about to call swap! ix: 2 jx: 7	swaping: 5 with 3
+after swap(): vall1: 3 vall2: 5
+about to call swap! ix: 3 jx: 4	swaping: 34 with 13
+after swap(): vall1: 13 vall2: 34
+about to call swap! ix: 3 jx: 6	swaping: 13 with 8
+after swap(): vall1: 8 vall2: 13
+about to call swap! ix: 3 jx: 7	swaping: 8 with 5
+after swap(): vall1: 5 vall2: 8
+about to call swap! ix: 4 jx: 5	swaping: 34 with 21
+after swap(): vall1: 21 vall2: 34
+about to call swap! ix: 4 jx: 6	swaping: 21 with 13
+after swap(): vall1: 13 vall2: 21
+about to call swap! ix: 4 jx: 7	swaping: 13 with 8
+after swap(): vall1: 8 vall2: 13
+about to call swap! ix: 5 jx: 6	swaping: 34 with 21
+after swap(): vall1: 21 vall2: 34
+about to call swap! ix: 5 jx: 7	swaping: 21 with 13
+after swap(): vall1: 13 vall2: 21
+about to call swap! ix: 6 jx: 7	swaping: 34 with 21
+after swap(): vall1: 21 vall2: 34
+0 1 1 2 3 5 8 13 21 34 
