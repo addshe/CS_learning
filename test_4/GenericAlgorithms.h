@@ -3,7 +3,8 @@
 #include <algorithm>
 #include <vector>
 #include <string>
-#include <iostream>         
+#include <iostream>
+//#include <iterator>
 const std::vector<int>* fibon_seq(int size);
 
 std::vector<int> filter(const std::vector<int> &vec, int filter_value, bool (*pred)(int, int));
@@ -41,6 +42,7 @@ OutputIterator filter(InputIterator first, InputIterator last, OutputIterator at
         *at++ = *first++;
     }
     return at;
+
 }
 
 #endif // GENERICALGORITHMS_H

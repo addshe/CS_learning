@@ -70,6 +70,7 @@ std::vector<int> filter(const std::vector<int> &vec, int value, std::less<int> &
 }
 
 //filter函数的泛型版本在头文件
+
 void Use_Filter(){
     const int elem_size = 8;
 
@@ -86,6 +87,22 @@ void Use_Filter(){
     filter(ivec.begin(), ivec.end(), ivec2.begin(), elem_size, std::greater<int>());
 }
 
+void Use_Filter2(){
+    const int elem_size = 8;
+
+    int ia[elem_size] = {12, 8, 43, 0, 6, 21, 3, 7};
+    std::vector<int> ivec(ia, ia+elem_size);
+
+    int ia2[elem_size];
+    std::vector<int> ivec2(elem_size);
+
+    std::cout << "filtering integer array for values less than 8\n";
+    filter(ia, ia+elem_size, ia2, elem_size, std::less<int>());
+
+    std::cout << "filtering integer array for values greater than 8\n";
+    filter(ivec.begin(), ivec.end(), std::back_inserter(ivec2), elem_size, std::greater<int>());
+}
+
 int count_occurs(const std::vector<int> &vec, int val){
     std::vector<int>::const_iterator iter = vec.begin();
     int occurs_count = 0;
@@ -96,3 +113,6 @@ int count_occurs(const std::vector<int> &vec, int val){
     }
     return occurs_count;
 }
+
+
+

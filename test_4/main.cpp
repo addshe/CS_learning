@@ -4,6 +4,7 @@ using namespace std;
 
 extern bool grow_vec(std::vector<int> &vec, int elem);
 extern void Use_Filter();
+extern void Use_Filter2();
 
 bool is_elem(std::vector<int>& vec, int elem){
     //auto max_value = max_element(vec.begin(), vec.end());
@@ -43,7 +44,8 @@ int main(){
     }
     */
 
-    Use_Filter();
+    //Use_Filter();
+    Use_Filter2();
 
     return 0;
 }
