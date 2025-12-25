@@ -5,6 +5,7 @@
 #include<vector>
 #include<string>
 #include<algorithm>
+#include<iterator>
 
 using std::vector;
 using std::string;
@@ -65,6 +66,43 @@ class Triangular {
         static const int _max_elems = 1024;
 
 };
+
+//Triangular_iterator
+class Triangular_iterator{
+    public:
+        Triangular_iterator(int index): _index(index-1) {};
+        bool operator==(const Triangular_iterator&) const;
+        bool operator!=(const Triangular_iterator&) const;
+        int operator*(const Triangular_iterator &) const;
+        Triangular_iterator& operator++();
+        Triangular_iterator operator++(int);
+    private:
+        void check_integrity() const;
+        int _index;
+}; 
+
+/*
+    (operator==) e.g: if(trian1 == trian2), if(*ptri1 == *ptri2) ...
+*/
+
+inline bool Triangular_iterator::operator==(const Triangular_iterator &rhs) const{
+    return _index == rhs._index;
+}
+
+/*
+    (operator!=)
+    这个函数比较的不是“两个类的成员函数和变量”，
+    而是比较“当前迭代器对象”和“另一个迭代器对象（rhs）”，
+    判断它们是否指向不同的位置。 返回值为bool
+*/
+
+inline bool Triangular_iterator::operator!=(const Triangular_iterator &rhs) const{
+    return !(*this == rhs);
+}
+
+inline int Triangular_iterator::operator*(const Triangular_iterator &rhs) const{
+    
+}
 
 //Matrix
 class Matrix {

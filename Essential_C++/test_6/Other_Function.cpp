@@ -60,3 +60,13 @@ void use_is_elem(){
         }
     }
 }
+
+void IteratorClass_demon(){
+    Triangular trian(1, 8);
+    Triangular::Iterator it = trian.begin(), end = trian.end();
+    while (it != end)
+    {
+        cout << *it << ' ';
+        ++it;
+    }
+}
